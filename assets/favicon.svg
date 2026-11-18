@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ROOD-WOOKO DIGITAL">
+  <defs>
+    <linearGradient id="cuivre" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E0B48C"/>
+      <stop offset="0.55" stop-color="#C8946A"/>
+      <stop offset="1" stop-color="#8A5527"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#1A1A1A"/>
+  <g fill="url(#cuivre)">
+    <rect x="19" y="8" width="5" height="14" rx="2.5"/>
+    <rect x="25" y="6" width="5" height="16" rx="2.5"/>
+    <rect x="31" y="5" width="5" height="17" rx="2.5"/>
+    <rect x="37" y="6" width="5" height="16" rx="2.5"/>
+    <rect x="43" y="8" width="5" height="14" rx="2.5"/>
+  </g>
+  <path fill="url(#cuivre)" d="M32 20c9 0 14 6.5 14 14.5S41 50 32 50s-14-6.5-14-15.5S23 20 32 20zm-6 14.5c0 3 2.5 5.5 6 5.5s6-2.5 6-5.5-2.5-5.5-6-5.5-6 2.5-6 5.5z"/>
+  <path fill="#1A1A1A" d="M25 34.5c1.8-2.8 4.5-3.4 6.6-1.6-1.6 2.6-4.4 3.2-6.6 1.6zm13.4-1.6c2.1-1.8 4.8-1.2 6.6 1.6-2.2 1.6-5 .1-6.6-1.6z"/>
+</svg>
