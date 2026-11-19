@@ -151,7 +151,7 @@
               </div>
 
               <div class="form-actions">
-                <button class="btn btn-rouge" type="submit">Envoyer via WhatsApp</button>
+                <button class="btn btn-rouge" type="submit">Envoyer le message</button>
                 <button class="btn btn-fantome" type="button" id="envoi-email">Envoyer par e-mail</button>
               </div>
 
@@ -307,12 +307,12 @@ if(formContact){
     if(btn){ btn.textContent="Envoi en cours..."; btn.disabled=true; }
     const data = { name: v('nom'), societe: v('societe'), email: v('email'), phone: v('telephone'), service: v('sujet'), message: v('message') };
     const { error } = await supaClient.from('messages').insert([data]);
-    if(error){ if(ok){ ok.textContent="Erreur : "+error.message; ok.setAttribute('data-visible','true'); } if(btn){ btn.textContent="Envoyer via WhatsApp"; btn.disabled=false; } return; }
+    if(error){ if(ok){ ok.textContent="Erreur : "+error.message; ok.setAttribute('data-visible','true'); } if(btn){ btn.textContent="Envoyer le message"; btn.disabled=false; } return; }
     if(ok){ ok.textContent="Merci "+data.name+" ! Votre demande est bien recue. On vous ouvre WhatsApp."; ok.setAttribute('data-visible','true'); }
     const texte = "Bonjour ROOD-WOOKO DIGITAL, je suis " + data.name + " (" + data.societe + ")\nObjet : " + data.service + "\nTel : " + data.phone + " / Email : " + data.email + "\nMessage : " + data.message;
     window.open("https://wa.me/22656433122?text=" + encodeURIComponent(texte), "_blank");
     formContact.reset();
-    if(btn){ btn.textContent="Envoyer via WhatsApp"; btn.disabled=false; }
+    if(btn){ btn.textContent="Envoyer le message"; btn.disabled=false; }
   });
 }
 </script>
